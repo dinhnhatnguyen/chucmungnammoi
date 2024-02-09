@@ -41,20 +41,37 @@ mail.onclick = function () {
 };
 closeSlider3.addEventListener("click", function () {
   slider3.classList.remove("active");
+  if (video.play) {
+    video.pause();
+  }
 });
 
 // ------audio------------
-var buttonSong = document.querySelector(".button");
-var mySong = document.getElementById("song");
-buttonSong.onclick = function () {
-  if (mySong.paused) {
-    mySong.play();
-  }
-};
+// var buttonSong = document.querySelector(".button");
+// var mySong = document.getElementById("song");
+// buttonSong.onclick = function () {
+//   if (mySong.paused) {
+//     mySong.play();
+//   }
+// };
 
-// const button = document.querySelector(".mail button");
-// const video = document.getElementById("video");
-// button.addEventListener("click", () => {
-//   video.src = "vid/Happynewyear.mp4";
-//   video.autoplay = "autoplay";
-// });
+const button = document.querySelector(".mail button");
+const video = document.getElementById("video");
+var mySong = document.getElementById("song");
+button.addEventListener("click", () => {
+  // video.src = "vid/0209.mp4";
+  // video.autoplay = "autoplay";
+
+  if (video.paused) {
+    video.play();
+  }
+  if ((mySong.autoplay = "autoplay")) {
+    mySong.pause();
+  }
+});
+
+button.addEventListener("click", () => {
+  if (mySong.autoplay) {
+    mySong.autoplay = false;
+  }
+});
