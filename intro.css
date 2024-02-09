@@ -1777,7 +1777,7 @@ h2 {
 }
 .box-content .right .content .title {
   font-family: "Dancing Script", cursive;
-  width: 150px;
+  width: 200px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -1916,4 +1916,9 @@ h2 {
   100% {
     transform: scale(1);
   }
+}
+
+.content video {
+  width: 200px;
+  height: auto;
 }
