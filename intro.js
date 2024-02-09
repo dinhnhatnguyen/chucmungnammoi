@@ -52,9 +52,9 @@ buttonSong.onclick = function () {
   }
 };
 
-const button = document.querySelector(".mail button");
-const video = document.getElementById("video");
-button.addEventListener("click", () => {
-  video.src = "vid/Happynewyear.mp4";
-  video.autoplay = "autoplay";
-});
+// const button = document.querySelector(".mail button");
+// const video = document.getElementById("video");
+// button.addEventListener("click", () => {
+//   video.src = "vid/Happynewyear.mp4";
+//   video.autoplay = "autoplay";
+// });
